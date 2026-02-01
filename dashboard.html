@@ -116,12 +116,14 @@
                         <div>
                             <div class="relative w-[300px]"> 
                                 <!-- select bank title -->
-                                <p class="font-bold mb-2">Select a bank</p>
+                                <p class="font-bold mb-2">Select Bank</p>
                                 <select class="bg-neutral-100 border-none focus:outline-none rounded-full w-full pl-5 pr-10 py-3 appearance-none">
                                     <!-- selecting option -->
-                                    <option>Bankooo</option>
-                                    <option>DBBL</option>
-                                    <option>Brac Bank</option>
+                                    <option disabled selected>Select a bank</option>
+                                    <option value="Bikash">Bikash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="DBBL">DBBL</option>
+                                    <option value="Rocket">Rocket</option>
                                 </select>
 
                                 <!-- arrow icon over slecting box -->
@@ -131,20 +133,20 @@
                             <!-- back account title -->
                             <p class="font-bold mt-5 mb-2">Bank Account Number</p>
                             <!-- bank account Number -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" placeholder="Enter 11 digit account number">
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" placeholder="Enter 11 digit account number" required>
 
                             <!-- withdraw amount title -->
                             <p class="font-bold mt-5 mb-2">Amount To Add</p>
                             <!-- wthdraw amount filed -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Add Amount to withdraw">
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Add Amount to withdraw" required>
 
                             <!-- pin number title -->
                             <p class="font-bold mt-5 mb-2">Pin Number</p>
                             <!-- pin number filed -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number">
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number" required>
                         </div>
 
-                        <button class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Login</button>
+                        <button class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Add Money</button>
                     </div>
                 </form>
                 
@@ -163,6 +165,8 @@
 
 
 
+    <!-- js file -->
+    <script src="./dashboard.js"></script>
 
 </body>
 </html>
