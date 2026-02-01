@@ -25,8 +25,6 @@ document.getElementById('add-money').addEventListener('click', function(event){
     if(pin.length === 4){
         const balanceSum = convertedAmount + convertedBalance;
         document.getElementById('current-balance').textContent = balanceSum;
-    }else{
-        alert('pin must be 4 digits')
     }
     
 })
