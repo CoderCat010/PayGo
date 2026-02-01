@@ -19,7 +19,7 @@
 
 
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 </head>
 <body class="bg-slate-900">
@@ -38,7 +38,7 @@
 
                     <!-- logo title & description -->
                     <div class="flex flex-col">
-                        <h2 class="font-bold text-xl text-[#080808]">$00000</h2>
+                        <h2 class="font-bold text-xl text-[#080808]">$<span id="current-balance">0000</span></h2>
                         <p class="text-base text-[#0808089a] pt-2">Current Balance</p>
                     </div>
                 </div>
@@ -106,7 +106,6 @@
         </header>
 
 
-
         <!--!MAIN PART -->
         <main>
             <section class="mt-16">
@@ -133,20 +132,20 @@
                             <!-- back account title -->
                             <p class="font-bold mt-5 mb-2">Bank Account Number</p>
                             <!-- bank account Number -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" placeholder="Enter 11 digit account number" required>
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" value="01993874782" required>
 
                             <!-- withdraw amount title -->
                             <p class="font-bold mt-5 mb-2">Amount To Add</p>
                             <!-- wthdraw amount filed -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Add Amount to withdraw" required>
+                            <input id="add-amount" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Add Amount to withdraw" required>
 
                             <!-- pin number title -->
                             <p class="font-bold mt-5 mb-2">Pin Number</p>
                             <!-- pin number filed -->
-                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number" required>
+                            <input id="pin-number" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number" required>
                         </div>
 
-                        <button class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Add Money</button>
+                        <button id="add-money" class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Add Money</button>
                     </div>
                 </form>
                 
@@ -166,7 +165,7 @@
 
 
     <!-- js file -->
-    <script src="./dashboard.js"></script>
+    <script src="./add-money.js"></script>
 
 </body>
 </html>
