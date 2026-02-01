@@ -25,8 +25,8 @@
 <body class="bg-slate-900">
     
     <!-- !HEADER PART -->
-    <section class="max-w-lg min-h-screen mx-auto py-6 bg-white">
-        <header class="mx-5">
+    <section class="max-w-lg min-h-screen mx-auto bg-gray-100 pb-20">
+        <header class="px-5 pt-6 pb-10 bg-white rounded-3xl">
             <!-- 
             navbar
             -->
@@ -103,15 +103,55 @@
                 </div>
 
             </div>
-
-
-
-
-
-
-
-
         </header>
+
+
+
+        <!--!MAIN PART -->
+        <main>
+            <section class="mt-16">
+                <!-- add money -->
+                <form>
+                    <div class="bg-white flex flex-col justify-center items-center h-full py-10 max-w-sm mx-auto shadow-lg rounded-[30px]">
+                        <div>
+                            <div class="relative w-[300px]"> 
+                                <!-- select bank title -->
+                                <p class="font-bold mb-2">Select a bank</p>
+                                <select class="bg-neutral-100 border-none focus:outline-none rounded-full w-full pl-5 pr-10 py-3 appearance-none">
+                                    <!-- selecting option -->
+                                    <option>Bankooo</option>
+                                    <option>DBBL</option>
+                                    <option>Brac Bank</option>
+                                </select>
+
+                                <!-- arrow icon over slecting box -->
+                                <i class="ri-arrow-down-s-line absolute right-5 bottom-3 text-xl pointer-events-none"></i>
+                            </div>
+
+                            <!-- back account title -->
+                            <p class="font-bold mt-5 mb-2">Bank Account Number</p>
+                            <!-- bank account Number -->
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" placeholder="Enter 11 digit account number">
+
+                            <!-- withdraw amount title -->
+                            <p class="font-bold mt-5 mb-2">Amount To Add</p>
+                            <!-- wthdraw amount filed -->
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Add Amount to withdraw">
+
+                            <!-- pin number title -->
+                            <p class="font-bold mt-5 mb-2">Pin Number</p>
+                            <!-- pin number filed -->
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number">
+                        </div>
+
+                        <button class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Login</button>
+                    </div>
+                </form>
+                
+            </section> 
+
+        </main>
+
     </section>
 
 
