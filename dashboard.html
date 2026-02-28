@@ -107,11 +107,15 @@
 
 
         <!--!MAIN PART -->
-        <main>
+        <main class="max-w-sm mx-auto">
+            <!-- 
+            add money part
+             -->
             <section class="mt-16">
                 <!-- add money -->
+                <h1 class="font-semibold text-xl mb-5">Add MONEY</h1>
                 <form>
-                    <div class="bg-white flex flex-col justify-center items-center h-full py-10 max-w-sm mx-auto shadow-lg rounded-[30px]">
+                    <div class="bg-white flex flex-col justify-center items-center h-full py-10 shadow-lg rounded-[30px]">
                         <div>
                             <div class="relative w-[300px]"> 
                                 <!-- select bank title -->
@@ -151,8 +155,63 @@
                 
             </section> 
 
-        </main>
 
+            <!-- 
+            Cash Out part
+             -->
+            <section class="mt-16">
+                <!-- Cash Out -->
+                 <h1 class="font-semibold text-xl mb-5">CashOut</h1>
+                <form>
+                    <div class="bg-white flex flex-col justify-center items-center h-full py-10 shadow-lg rounded-[30px]">
+                        <div>
+                            <!-- back account title -->
+                            <p class="font-bold mt-5 mb-2">Agent Number</p>
+                            <!-- bank account Number -->
+                            <input class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" value="01993874782" required>
+
+                            <!-- withdraw amount title -->
+                            <p class="font-bold mt-5 mb-2">Amount</p>
+                            <!-- wthdraw amount filed -->
+                            <input id="-withdraw-amount" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Enter Amount To Withdraw" required>
+
+                            <!-- pin number title -->
+                            <p class="font-bold mt-5 mb-2">Pin Number</p>
+                            <!-- pin number filed -->
+                            <input id="cashout-pin" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] pl-5 py-3" type="password" placeholder="Enter 4 digit pin number" required>
+                        </div>
+
+                        <button id="cashout" class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Add Money</button>
+                    </div>
+                </form>
+                
+            </section> 
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
     </section>
 
 
