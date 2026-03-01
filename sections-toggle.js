@@ -78,4 +78,24 @@ document.getElementById('get-bonus-card').addEventListener('click', function(){
 
 
 
+// pay bill button & get-bonus section
+document.getElementById('pay-bill-card').addEventListener('click', function(){
+    // hide add money section by pay bill
+    document.getElementById('add-money-section').style.display = 'none';
+
+    // hide cashout money section by pay bill
+    document.getElementById('cashout-section').style.display = 'none';
+
+    // hide transfer money section by pay bill
+    document.getElementById('transfer-money-section').style.display = 'none';
+
+    // hide get bonus section by pay bill
+    document.getElementById('get-bonus-section').style.display = 'none';
+
+    // pay bill card
+    document.getElementById('pay-bill-section').style.display = 'block';
+})
+
+
+
 
