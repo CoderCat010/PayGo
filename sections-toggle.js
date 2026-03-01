@@ -20,20 +20,60 @@ document.getElementById('add-money-card').addEventListener('click', function(){
 
 // cashout button & cashout section
 document.getElementById('cashout-card').addEventListener('click', function(){
-    // hide add money section by cashout card
+    // hide add money section by transfer money
     document.getElementById('add-money-section').style.display = 'none';
 
-    // hide transfer money section by cashout card
+    // hide transfer money section by transfer money
     document.getElementById('transfer-money-section').style.display = 'none';
 
-    // hide get bonus section by cashout card
+    // hide get bonus section by transfer money
     document.getElementById('get-bonus-section').style.display = 'none';
 
-    // hide pay bill section by cashout card
+    // hide pay bill section by transfer money
     document.getElementById('pay-bill-section').style.display = 'none';
 
-    // add money card
+    // cashout card
     document.getElementById('cashout-section').style.display = 'block';
+})
+
+
+
+// transfer money button & transfer money section
+document.getElementById('transfer-money-card').addEventListener('click', function(){
+    // hide add money section by transfer money
+    document.getElementById('add-money-section').style.display = 'none';
+
+    // hide cashout money section by transfer money
+    document.getElementById('cashout-section').style.display = 'none';
+
+    // hide get bonus section by transfer money
+    document.getElementById('get-bonus-section').style.display = 'none';
+
+    // hide pay bill section by transfer money
+    document.getElementById('pay-bill-section').style.display = 'none';
+
+    // transfer money card
+    document.getElementById('transfer-money-section').style.display = 'block';
+})
+
+
+
+// get-bonus button & get-bonus section
+document.getElementById('get-bonus-card').addEventListener('click', function(){
+    // hide add money section by get-bonus
+    document.getElementById('add-money-section').style.display = 'none';
+
+    // hide cashout money section by get-bonus
+    document.getElementById('cashout-section').style.display = 'none';
+
+    // hide transfer money section by get-bonus
+    document.getElementById('transfer-money-section').style.display = 'none';
+
+    // hide pay bill section by get-bonus
+    document.getElementById('pay-bill-section').style.display = 'none';
+
+    // get-bonus card
+    document.getElementById('get-bonus-section').style.display = 'block';
 })
 
 
