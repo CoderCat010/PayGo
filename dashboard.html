@@ -38,7 +38,7 @@
 
                     <!-- logo title & description -->
                     <div class="flex flex-col">
-                        <h2 class="font-bold text-xl text-[#080808]">$<span id="current-balance">0000</span></h2>
+                        <h2 class="font-bold text-xl text-[#080808]">$<span id="current-balance">6000</span></h2>
                         <p class="text-base text-[#0808089a] pt-2">Current Balance</p>
                     </div>
                 </div>
@@ -65,37 +65,37 @@
                 <div class="flex justify-center mt-10">
                     <div class="grid grid-cols-3 justify-center gap-x-5 gap-y-7">
                         <!-- add money -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="add-money-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/wallet1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">Add Money</p>
                         </div>
                         
                         <!-- Cash Out -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="cashout-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/send1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">CashOut</p>
                         </div>
 
                         <!-- Transfer Money -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="transfer-money-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/money1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">Transfer Money</p>
                         </div>
 
                         <!-- Get Bonus -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="get-bonus-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/bonus1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">Get Bonus</p>
                         </div>
                         
                         <!-- Pay Bill -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="pay-bill-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/purse1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">Pay Bill</p>
                         </div>
 
                         <!-- Transaction -->
-                        <div class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
+                        <div id="transaction-card" class="flex flex-col items-center justify-center px-11 h-28 rounded-lg border border-[#0000004f] hover:border-[2px] hover:border-[#0874F2] hover:bg-[#0077ff15] text-[#0808089a] hover:text-[#0874F2] hover:font-semibold">
                             <img src="./images/transaction1.png" alt="">
                             <p class="pt-3 text-sm whitespace-nowrap">Transaction</p>
                         </div>
@@ -111,7 +111,7 @@
             <!-- 
             add money part
              -->
-            <section class="mt-16">
+            <section id="add-money-section" class="mt-16">
                 <!-- add money -->
                 <h1 class="font-semibold text-xl mb-5">Add Money</h1>
                 <form>
@@ -159,7 +159,7 @@
             <!-- 
             Cash Out part
             -->
-            <section class="mt-16">
+            <section id="cashout-section" class="mt-16">
                 <!-- Cash Out -->
                  <h1 class="font-semibold text-xl mb-5">CashOut</h1>
                 <form>
@@ -191,7 +191,7 @@
             <!-- 
             Transfer money part
             -->
-            <section class="mt-16">
+            <section id="transfer-money-section" class="mt-16">
                 <!-- Transfer Money -->
                  <h1 class="font-semibold text-xl mb-5">Transfer Money</h1>
                 <form>
@@ -223,7 +223,7 @@
             <!-- 
             Get bonus part
             -->
-            <section class="mt-16">
+            <section id="get-bonus-section" class="mt-16">
                 <!-- Get Bonus -->
                  <h1 class="font-semibold text-xl mb-5">Get Bonus</h1>
                 <form>
@@ -231,7 +231,7 @@
                         <div>
                             <p class="font-bold mt-5 mb-2">Enter Bonus Coupon</p>
                             <!-- coupon number filed -->
-                            <input id="coupon-number" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="number" placeholder="Enter Your Coupon" required>
+                            <input id="coupon-number" class="bg-neutral-100 border-none focus:outline-none rounded-full w-[300px] px-5 py-3" type="text" placeholder="Enter Your Coupon" required>
                         </div>
 
                         <button id="coupon" class="bg-[#0874F2] font-semibold text-white border-none py-3 mt-10 rounded-full w-[300px]">Get Bonus</button>
@@ -244,7 +244,7 @@
              <!-- 
             pay bill part
              -->
-            <section class="mt-16">
+            <section id="pay-bill-section" class="mt-16">
                 <!-- pay bill -->
                 <h1 class="font-semibold text-xl mb-5">Pay Bill</h1>
                 <form>
@@ -325,6 +325,7 @@
 
     <!-- js file -->
     <script src="./add-money.js"></script>
+    <script src="./sections-toggle.js"></script>
 
 </body>
 </html>
