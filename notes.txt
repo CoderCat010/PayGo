@@ -1,6 +1,0 @@
-//=======================================NOTE: 1
-HTML er moddhe amra jodi kono number o likhi, browser seta ke default vabe text (string) hishabe treat kore. Mane HTML nijer theke kono data type maintain kore na shob kichu basically text hishabe thake.
-Tai jokhon amra JavaScript diye DOM theke oi value access kori (jemon innerText ba textContent diye), tokhon amra actually string value pai, number na.
-Onno dike, jodi amra JavaScript er moddhe kono variable declare kori (jemon let x = 100), tokhon JavaScript nijer data type onujayi seta ke number hishabe treat kore.
-So, summary holo:
-HTML theke asha shob data string hoy, r jodi amader calculation korte hoy, tahole oi string ke JavaScript diye manually number e convert korte hoy.
