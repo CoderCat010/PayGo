@@ -8,7 +8,6 @@ document.getElementById('cashout').addEventListener('click', function(event){
     console.log(typeof convertedWithdrawCash);
     
     
-    
     //  get pin number
     const pin = document.getElementById('cashout-pin').value;
     // convert pin type into number
