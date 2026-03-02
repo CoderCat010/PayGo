@@ -1,5 +1,15 @@
+// dashboard default appearance
+const headerSection = document.querySelector('header')
+headerSection.style.display = 'block';
+const mainSection = document.querySelector('main')
+mainSection.style.display = 'none';
+
+
+
 // add money button & add money section 
 document.getElementById('add-money-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
+
     // hide cashout section by add money card
     document.getElementById('cashout-section').style.display = 'none';
 
@@ -23,6 +33,8 @@ document.getElementById('add-money-card').addEventListener('click', function(){
 
 // cashout button & cashout section
 document.getElementById('cashout-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
+
     // hide add money section by transfer money
     document.getElementById('add-money-section').style.display = 'none';
 
@@ -46,6 +58,8 @@ document.getElementById('cashout-card').addEventListener('click', function(){
 
 // transfer money button & transfer money section
 document.getElementById('transfer-money-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
+
     // hide add money section by transfer money
     document.getElementById('add-money-section').style.display = 'none';
 
@@ -69,6 +83,7 @@ document.getElementById('transfer-money-card').addEventListener('click', functio
 
 // get-bonus button & get-bonus section
 document.getElementById('get-bonus-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
     // hide add money section by get-bonus
     document.getElementById('add-money-section').style.display = 'none';
 
@@ -92,6 +107,8 @@ document.getElementById('get-bonus-card').addEventListener('click', function(){
 
 // pay bill button & get-bonus section
 document.getElementById('pay-bill-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
+
     // hide add money section by pay bill
     document.getElementById('add-money-section').style.display = 'none';
 
@@ -115,6 +132,8 @@ document.getElementById('pay-bill-card').addEventListener('click', function(){
 
 // transaction button & transaction section 
 document.getElementById('transaction-card').addEventListener('click', function(){
+    mainSection.style.display = 'block';
+    
     // hide add money section by transaction
     document.getElementById('add-money-section').style.display = 'none';
 

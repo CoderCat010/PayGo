@@ -84,6 +84,7 @@ document.getElementById('add-money').addEventListener('click', function(event){
         // get transaction history
         const transaction = document.getElementById('history-container');
         transaction.appendChild(history);
+        transaction.style.display = block;
     }else{
         alert('pin must be 4 digits')
     }
